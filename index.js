@@ -4,6 +4,8 @@
  *Date : 28 July , 2023
  */
 
+ 
+
 //topic-1:Online Store Discount Calculator (If-Else Statement)
 
 function disCalculator(amount) {
@@ -12,26 +14,31 @@ function disCalculator(amount) {
   } else if (amount >= 50 || amount <= 100) {
     const discount = (amount * 5) / 100;
     const total = amount - discount;
-    console.log(total, discount);
+    console.log(discount + " & " + total + "+" + discount);
   } else if (amount >= 100 || amount <= 200) {
     const discount = (amount * 10) / 100;
     const total = amount - discount;
-    console.log(total, discount);
+    console.log(discount + " & " + total + "+" + discount);
   } else if (amount >= 200) {
     const discount = (amount * 15) / 100;
     const total = amount - discount;
-    console.log(total, discount);
+    console.log(discount + " & " + total + "+" + discount);
   }
 }
 
-disCalculator();
+disCalculator(200);
 
 //Topic-2: Filter Even Numbers
 
-const givenArr = [12, 34, 45, 23, 6, 78, 54, 90];
 
-const filteredArr = givenArr.filter((arr) => arr % 2 == 0);
-console.log(filteredArr);
+function getEvenNumber(givenArr){
+
+  const filteredArr = givenArr.filter((arr) => arr % 2 == 0);
+  console.log(filteredArr);
+
+}
+
+getEvenNumber([12, 34, 45, 23, 6, 78, 54, 90])
 
 //Topic-3: Multiplication Table Generator
 
@@ -40,7 +47,7 @@ function onMultiplication(input) {
     console.log(input + "*" + i + "=" + input * i);
   }
 }
-onMultiplication();
+onMultiplication(5);
 
 //Topic: Grade Calculator (JavaScript Switch Case)
 
@@ -68,10 +75,10 @@ function calculateGrade(mark) {
       break;
 
     default:
-      "Invalid Score";
+      grade="Invalid Score";
       break;
   }
   console.log(grade);
 }
 
-calculateGrade(90);
+calculateGrade();
