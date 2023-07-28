@@ -26,19 +26,18 @@ function disCalculator(amount) {
   }
 }
 
-disCalculator(150);
+disCalculator(300);
 
 //Topic-2: Filter Even Numbers
 
 
-function getEvenNumber(givenArr){
 
-  const filteredArr = givenArr.filter((arr) => arr % 2 == 0);
-  console.log(filteredArr);
+  const givenArr =[12, 34, 45, 23, 6, 78, 54, 90] ;
+  const filteredEvenNumbers = givenArr.filter((arr) => arr % 2 == 0);
+  console.log(filteredEvenNumbers);
 
-}
 
-getEvenNumber([12, 34, 45, 23, 6, 78, 54, 90])
+
 
 //Topic-3: Multiplication Table Generator
 
