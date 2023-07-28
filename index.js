@@ -1,6 +1,6 @@
 /*
  *Author:Md Sholayman
- *Description:First assignment project in MERN-stack Development Course.
+ *Description:First assignment  in MERN-stack Development Course.
  *Date : 28 July , 2023
  */
 
@@ -49,7 +49,7 @@ function onMultiplication(input) {
 }
 onMultiplication(5);
 
-//Topic: Grade Calculator (JavaScript Switch Case)
+//Topic-4: Grade Calculator (JavaScript Switch Case)
 
 function calculateGrade(mark) {
   let grade;
