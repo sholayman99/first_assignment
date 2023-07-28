@@ -14,19 +14,19 @@ function disCalculator(amount) {
   } else if (amount >= 50 || amount <= 100) {
     const discount = (amount * 5) / 100;
     const total = amount - discount;
-    console.log(discount + " & " + total + "+" + discount);
+    console.log(`Discounted Amount:${total} Discount:${discount} Total Amount :${amount}` );
   } else if (amount >= 100 || amount <= 200) {
     const discount = (amount * 10) / 100;
     const total = amount - discount;
-    console.log(discount + " & " + total + "+" + discount);
+    console.log(`Discounted Amount:${total} Discount:${discount} Total Amount :${amount}` );
   } else if (amount >= 200) {
     const discount = (amount * 15) / 100;
     const total = amount - discount;
-    console.log(discount + " & " + total + "+" + discount);
+    console.log(`Discounted Amount:${total} Discount:${discount} Total Amount :${amount}` );
   }
 }
 
-disCalculator(200);
+disCalculator(150);
 
 //Topic-2: Filter Even Numbers
 
@@ -54,19 +54,19 @@ onMultiplication(5);
 function calculateGrade(mark) {
   let grade;
   switch (true) {
-    case mark >= 90:
+    case mark >= 90 && mark <=100:
       grade = "A";
       break;
 
-    case mark == 89 || mark >= 80:
+    case mark <= 89 && mark >= 80:
       grade = "B";
       break;
 
-    case mark == 79 || mark >= 70:
+    case mark <= 79 && mark >= 70:
       grade = "C";
       break;
 
-    case mark == 69 || mark >= 60:
+    case mark <= 69 && mark >= 60:
       grade = "D";
       break;
 
@@ -81,4 +81,4 @@ function calculateGrade(mark) {
   console.log(grade);
 }
 
-calculateGrade();
+calculateGrade(101);
