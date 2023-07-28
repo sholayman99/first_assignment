@@ -37,3 +37,11 @@ const givenArr = [12, 34, 45, 23, 6, 78, 54, 90] ;
 const filteredArr = givenArr.filter(arr => arr % 2 ==0) ;
 console.log(filteredArr);
 
+//Topic-3: Multiplication Table Generator
+
+function onMultiplication (input){
+    for (let i = 1 ; i<11 ; i++ ){
+      console.log(input+"*"+i+"="+ input*i);
+    }
+}
+onMultiplication()
