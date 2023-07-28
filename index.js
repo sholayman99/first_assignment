@@ -13,20 +13,27 @@ if(amount<50){
 else if(amount >=50 || amount <=100 ){
   const discount = (amount * 5)/100
   const total = amount - discount
-  console.log(total);
+  console.log(total,discount);
 }
 else if(amount >100 || amount <=200){
     const discount = (amount * 10)/100
     const total = amount - discount
-    console.log(total);
+    console.log(total,discount);
 }
 else if(amount >= 200){
     const discount = (amount * 15)/100
     const total = amount - discount
-    console.log(total);
-}
+    console.log(total,discount);}
 
 }
 
-disCalculator(250)
+disCalculator()
+
+
+//Topic-2: Filter Even Numbers
+
+const givenArr = [12, 34, 45, 23, 6, 78, 54, 90] ;
+
+const filteredArr = givenArr.filter(arr => arr % 2 ==0) ;
+console.log(filteredArr);
 
